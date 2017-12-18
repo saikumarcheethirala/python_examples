@@ -14,13 +14,13 @@ itemslist={}
 print "items list and stock of items"
 for key in stock:
   print key+","
-n=input("enter no of items want to purchase")
+n=input("enter no of items want to purchase: ")
 
 count=1
 while count<=n:
   count=count+1
-  addingitem=input("enter item you want to add")
-  no_of_items=input("enter no of things")
+  addingitem=input("enter item you want to add: ")
+  no_of_items=input("enter no of things: ")
   itemslist[addingitem]=no_of_items
   
 
@@ -34,4 +34,4 @@ for item in itemslist:
   else:
     print "item is not available %s" % item
 
-print total
+print "the total cost of the purchasing items is %s" % total
